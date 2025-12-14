@@ -1,0 +1,26 @@
+1. 
+a. git -v or git --version -> To check the installed git version.
+
+2. 
+a. git status -> To check the current status of the repository, including changes staged for commit, untracked files, and changes not yet staged.
+
+3. 
+a. git init -> To initialize the Repository/folder as a git repo.
+
+4. 
+a. git config user.name 'Arunesh Singh' -> Set the name of the user for commits in the repository.
+b. git config user.email 'johndoe@example.com' -> Set the email of the user for commits in the repository.
+
+5. 
+a. git add <filename> -> Add the specified file current changes to the staging area (index) so they will be included in the next commit.
+b. git add . -> Add all file's current changes to the staging area (index) so they will be included in the next commit.
+
+6. 
+a. git commit -> To commit the changes in the staging area to the local repository(without message). 
+b. git commit -m "commit message" -> To commit the changes in the staging area to the local repository with a descriptive message.
+
+7. 
+a. git push -> To push the committed changes from the local repository to the remote repository on the current branch.
+b. git push origin <branch_name> -> To push the committed changes from the local repository to the remote repository on the specified branch.
+
+8. git log -> To view the commit history of the repository, showing a list of commits along with their messages, authors, and timestamps.
