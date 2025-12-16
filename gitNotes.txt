@@ -1,5 +1,8 @@
 1. 
 a. git -v or git --version -> To check the installed git version.
+b. git -h or git --help -> To display help information about git commands.
+c. git help <command> or 'git help <concept>' -> To read about a specific subcommand or concept.
+Ex.  'git help git' for an overview of the system.
 
 2. 
 a. git status -> To check the current status of the repository, including changes staged for commit, untracked files, and changes not yet staged.
@@ -10,6 +13,7 @@ a. git init -> To initialize the Repository/folder as a git repo.
 4. 
 a. git config user.name 'Arunesh Singh' -> Set the name of the user for commits in the repository.
 b. git config user.email 'johndoe@example.com' -> Set the email of the user for commits in the repository.
+c. git config --global user.name 'Arunesh Singh' -> Set the name of the user globally for commits in the repository.
 
 5. 
 a. git add <filename> -> Add the specified file current changes to the staging area (index) so they will be included in the next commit.
@@ -37,6 +41,10 @@ a. git branch -> To list all branches in the repository and indicate the current
 b. git branch <branch_name> -> To create a new branch with the specified name.
 c. git checkout <branch_name> -> To switch to the specified branch in the repository.
 d. git checkout -b <branch_name> -> To create a new branch with the specified name and switch to it immediately.
+e. git switch <branch_name> -> To switch to the specified branch in the repository (alternative to git checkout).
+f. git switch -c <branch_name> -> To create a new branch with the specified name and switch to it immediately (alternative to git checkout -b).
+
+NOTE : Git checkout is now being replaced by git switch for branch switching operations.
 
 11. 
 a. git merge <branch_name> -> To merge the specified branch into the current branch, combining their histories.
