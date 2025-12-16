@@ -51,3 +51,10 @@ c. git stash list -> To view a list of all stashed changes.
 d. git stash pop 'stash@{n}' -> To reapply a specific stashed change identified by its index 'n' and remove it from the stash list.
 
 14.
+a. git diff -> To view the differences between the working directory and the staging area, showing changes that have not yet been staged for commit.
+b. git diff --staged -> To view the differences between the staging area and the last commit, showing changes that are staged for the next commit.
+c. git diff <branch_name1> <branch_name2> -> To view the differences between two branches.
+
+15.
+a. git fetch -> To retrieve the latest changes from the remote repository without merging them into the local repository.
+b. git pull -> To fetch the latest changes from the remote repository and automatically merge them into the current branch in the local repository.
