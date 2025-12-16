@@ -31,3 +31,23 @@ b. git push origin <branch_name> -> To push the committed changes from the local
 9. 
 a. git log --oneline -> To view a simplified commit history of the repository, showing each commit on a single line with its abbreviated hash and message.
 b. git log -> To view the commit history of the repository, showing a list of commits along with their messages, authors, and timestamps.
+
+10. 
+a. git branch -> To list all branches in the repository and indicate the current branch.
+b. git branch <branch_name> -> To create a new branch with the specified name.
+c. git checkout <branch_name> -> To switch to the specified branch in the repository.
+d. git checkout -b <branch_name> -> To create a new branch with the specified name and switch to it immediately.
+
+11. 
+a. git merge <branch_name> -> To merge the specified branch into the current branch, combining their histories.
+
+12.
+a. git clone <repository_url> -> To create a local copy of a remote repository by cloning it from the specified URL.
+
+13.
+a. git stash -> To temporarily save changes in the working directory that are not yet ready to be committed, allowing you to work on something else.
+b. git stash pop -> To reapply the most recently stashed changes and remove them from the stash list.
+c. git stash list -> To view a list of all stashed changes.
+d. git stash pop 'stash@{n}' -> To reapply a specific stashed change identified by its index 'n' and remove it from the stash list.
+
+14.
