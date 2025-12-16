@@ -35,7 +35,6 @@ c. git push -u origin <branch_name> -> To push the committed changes from the lo
 d. git push origin --delete <branch_name> -> To delete the specified branch from the remote repository.
 e. git push origin HEAD -> To push the current branch to the remote repository.
 f. git push origin <local_branch>:<remote_branch> -> To push the local branch to a different named branch on the remote repository.
-g. git push origin :<remote_branch> -> To delete the specified branch from the remote repository (alternative syntax).
 
 9. 
 a. git log --oneline -> To view a simplified commit history of the repository, showing each commit on a single line with its abbreviated hash and message.
