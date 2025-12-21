@@ -38,7 +38,7 @@ NOTE : Git checkout is now being replaced by git switch for branch switching ope
 
 9.
 a. git fetch -> To retrieve the latest changes from the remote repository without merging them into the local repository.
-b. git fetch origin -> To retrieve the latest changes from the specified remote repository (origin) without merging them into the local repository.
+b. git fetch origin -> To retrieve the latest changes from the specified remote repository (origin) without merging them into the local repository. (It fetches all branches from the remote origin)
 c. git fetch origin <branch_name> -> To retrieve the latest changes from the specified branch of the remote repository (origin) without merging them into the local repository.
 
 10.
