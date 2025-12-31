@@ -44,6 +44,7 @@ c. git fetch origin <branch_name> -> To retrieve the latest changes from the spe
 10.
 a. git pull -> To fetch the latest changes from the remote repository and automatically merge them into the current branch in the local repository.
 b. git pull origin <branch_name> -> To fetch the latest changes from the specified branch of the remote repository and automatically merge them into the current branch in the local repository.
+c. git pull -u origin <branch_name> -> To fetch the latest changes from the specified branch of the remote repository and automatically merge them into the current branch in the local repository, while also setting the upstream tracking reference for future pulls and pushes.
 
 11. 
 a. git merge <branch_name> -> To merge the specified branch into the current branch, combining their histories.
