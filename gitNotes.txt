@@ -33,6 +33,8 @@ a. git checkout <branch_name> -> To switch to the specified branch in the reposi
 b. git checkout -b <branch_name> -> To create a new branch with the specified name and switch to it immediately.
 c. git switch <branch_name> -> To switch to the specified branch in the repository (alternative to git checkout).
 d. git switch -c <branch_name> -> To create a new branch with the specified name and switch to it immediately (alternative to git checkout -b).
+e. git checkout <commit_hash> -> To switch to a specific commit in the repository, putting the repository in a detached HEAD state.
+f. git checkout Head~2 -> To switch to the commit that is two commits before the current HEAD, putting the repository in a detached HEAD state.(You can also use git switch --detach <commit_hash> as an alternative) To switch back to the latest commit on the current branch, use 'git checkout <branch_name>' or 'git switch <branch_name>'.
 
 NOTE : Git checkout is now being replaced by git switch for branch switching operations.
 
@@ -65,7 +67,8 @@ g. git stash clear -> To remove all stashed changes from the stash list.
 13.
 a. git diff -> To view the differences between the working directory and the staging area, showing changes that have not yet been staged for commit.
 b. git diff --staged -> To view the differences between the staging area and the last commit, showing changes that are staged for the next commit.
-c. git diff <branch_name1> <branch_name2> -> To view the differences between two branches.
+c. git diff <branch_name1> <branch_name2> or git diff <branch_name1>..<branch_name2> -> To view the differences between two branches.
+d. git diff <commit_hash1> <commit_hash2> or git diff <commit_hash1>..<commit_hash2> -> To view the differences between two specific commits.
 
 14. 
 a. git add <filename> -> Add the specified file current changes to the staging area (index) so they will be included in the next commit.
@@ -105,3 +108,6 @@ c. git rebase --continue -> To continue an interactive rebase after resolving co
 d. git rebase --abort -> To cancel an ongoing rebase and return to the original state.
 
 NOTE : Avoid rebasing branches that have been pushed to the remote repository, as it rewrites commit history and can cause issues for other collaborators.
+
+20. Rarely Used Command:
+a. git reflog -> To view the reference log, which records updates to the tip of branches and other references in the repository, allowing you to recover lost commits or branches.
