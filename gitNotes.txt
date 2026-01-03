@@ -51,6 +51,12 @@ c. git pull -u origin <branch_name> -> To fetch the latest changes from the spec
 11. 
 a. git merge <branch_name> -> To merge the specified branch into the current branch, combining their histories.
 b. git merge origin/main -> To merge the latest changes from the remote main branch into the current branch.
+c. git merge --abort -> To cancel an ongoing merge process and return to the state before the merge began, useful in case of conflicts.
+d. git merge --continue -> To continue the merge process after resolving conflicts manually.
+e. git merge --no-ff <branch_name> -> To merge a branch while creating a merge commit even if a fast-forward merge is possible, preserving branch history in the commit graph.
+f. git merge --squash <branch_name> -> To merge a branch by combining all its commits into a single commit on the current branch, useful for cleaning up feature branch history.
+g. git merge -m "merge message" <branch_name> -> To merge a branch with a custom merge commit message instead of the default message.
+h. git merge --stat <branch_name> -> To show a diffstat of what changed as a result of the merge without actually performing the merge.
 
 NOTE : origin/main might not be up to date with the actual remote branch. Use git fetch first to ensure you have the latest changes.
 
