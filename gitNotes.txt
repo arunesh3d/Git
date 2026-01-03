@@ -83,6 +83,7 @@ c. git add . -> Add all file's current changes to the staging area (index) so th
 15. 
 a. git restore <filename> -> To discard changes in the working directory file.
 b. git restore . -> To discard all changes in the working directory.
+c. git restore --staged <filename> -> To unstage a specific file from the staging area without discarding changes.
 
 16. 
 a. git commit -> To commit the changes in the staging area to the local repository(without message). 
