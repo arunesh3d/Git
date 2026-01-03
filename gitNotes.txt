@@ -88,6 +88,10 @@ c. git restore --staged <filename> -> To unstage a specific file from the stagin
 16. 
 a. git commit -> To commit the changes in the staging area to the local repository(without message). 
 b. git commit -m "commit message" -> To commit the changes in the staging area to the local repository with a descriptive message.
+c. git commit -am "commit message" -> To stage all tracked, modified files and commit them to the local repository with a descriptive message in a single command.
+d. git commit -a -m "commit message" -> To automatically stage all tracked, modified files and commit them to the local repository with a descriptive message (skips the staging area just -a and -m are written here separately).
+e. git commit --amend -> To modify the most recent commit by adding new changes or updating the commit message.
+f. git commit --amend -m "new commit message" -> To update the commit message of the most recent commit without changing its content.
 
 17. 
 a. git push -> To push the committed changes from the local repository to the remote repository on the current branch.
@@ -113,7 +117,7 @@ b. git rebase -i HEAD~3 -> To perform an interactive rebase on the last 3 commit
 c. git rebase --continue -> To continue an interactive rebase after resolving conflicts or making changes.
 d. git rebase --abort -> To cancel an ongoing rebase and return to the original state.
 
-NOTE : Avoid rebasing branches that have been pushed to the remote repository, as it rewrites commit history and can cause issues for other collaborators.
+NOTE : Avoid rebasing branches that have been pushed to the remote repository, as it rewrites commit history and can cause issues for other collaborators. Also avoid rebasing main or master branch.
 
 20. Rarely Used Command:
 a. git reflog -> To view the reference log, which records updates to the tip of branches and other references in the repository, allowing you to recover lost commits or branches.
