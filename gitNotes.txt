@@ -57,12 +57,14 @@ NOTE : origin/main might not be up to date with the actual remote branch. Use gi
 12.
 a. git stash list -> To view a list of all stashed changes.
 b. git stash -> To temporarily save changes in the working directory that are not yet ready to be committed, allowing you to work on something else.
-c. git stash pop -> To reapply the most recently stashed changes and remove them from the stash list.
-d. git stash pop 'stash@{n}' -> To reapply a specific stashed change identified by its index 'n' and remove it from the stash list.
-e. git stash apply 'stash@{n}' -> To reapply a specific stashed change identified by its index 'n' without removing it from the stash list.
-f. git stash drop 'stash@{n}' -> To delete a specific stashed change identified by its index 'n' from the stash list.
+c. git stash -m "message" -> To temporarily save changes in the working directory with a descriptive message.
+d. git stash pop -> To reapply the most recently stashed changes and remove them from the stash list.
+e. git stash pop 'stash@{n}' -> To reapply a specific stashed change identified by its index 'n' and remove it from the stash list.
+f. git stash apply 'stash@{n}' -> To reapply a specific stashed change identified by its index 'n' without removing it from the stash list.
+g. git stash drop 'stash@{n}' -> To delete a specific stashed change identified by its index 'n' from the stash list.
 h. git stash drop -> To delete the most recently stashed change from the stash list.
-g. git stash clear -> To remove all stashed changes from the stash list.
+i. git stash clear -> To remove all stashed changes from the stash list.
+j. git stash push --staged -> To stash only the changes that have been staged for commit, leaving unstaged changes in the working directory.
 
 13.
 a. git diff -> To view the differences between the working directory and the staging area, showing changes that have not yet been staged for commit.
