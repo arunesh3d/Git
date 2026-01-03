@@ -71,6 +71,9 @@ a. git diff -> To view the differences between the working directory and the sta
 b. git diff --staged -> To view the differences between the staging area and the last commit, showing changes that are staged for the next commit.
 c. git diff <branch_name1> <branch_name2> or git diff <branch_name1>..<branch_name2> -> To view the differences between two branches.
 d. git diff <commit_hash1> <commit_hash2> or git diff <commit_hash1>..<commit_hash2> -> To view the differences between two specific commits.
+e. git diff stash -> To view the differences between the most recent stash and the working directory.
+f. git diff stash <filename> -> To view the differences between a specific file in the most recent stash and the working directory.
+g. git diff 'stash@{n}' -> To view the differences between a specific stash identified by its index 'n' and the working directory.
 
 14. 
 a. git add <filename> -> Add the specified file current changes to the staging area (index) so they will be included in the next commit.
