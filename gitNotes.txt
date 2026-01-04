@@ -119,6 +119,15 @@ e. git reset . -> To unstage all files from the staging area without discarding 
 NOTE : Use 'git reset --hard' with caution as it permanently discards changes. Use 'git reflog' to recover if needed.
 
 19.
+a. git revert <commit_hash> -> To create a new commit that undoes the changes made in the specified commit, preserving the commit history.
+b. git revert HEAD -> To create a new commit that undoes the changes made in the most recent commit.
+c. git revert HEAD~1 -> To create a new commit that undoes the changes made in the second most recent commit.
+d. git revert --continue -> To continue the revert process after resolving conflicts manually.
+e. git revert --abort -> To cancel an ongoing revert process and return to the state before the revert began.
+
+NOTE : git revert creates a new commit that undoes changes, while git reset rewrites history. Use git revert for published commits to maintain history integrity.
+
+20.
 a. git rebase <branch_name> -> To reapply the current branch commits on top of another branch, creating a linear commit history.
 b. git rebase -i HEAD~3 -> To perform an interactive rebase on the last 3 commits, allowing you to modify, squash, or reorder commits.
 c. git rebase --continue -> To continue an interactive rebase after resolving conflicts or making changes.
@@ -126,5 +135,5 @@ d. git rebase --abort -> To cancel an ongoing rebase and return to the original 
 
 NOTE : Avoid rebasing branches that have been pushed to the remote repository, as it rewrites commit history and can cause issues for other collaborators. Also avoid rebasing main or master branch.
 
-20. Rarely Used Command:
+21. Rarely Used Command:
 a. git reflog -> To view the reference log, which records updates to the tip of branches and other references in the repository, allowing you to recover lost commits or branches.
