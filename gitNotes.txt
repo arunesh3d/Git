@@ -14,6 +14,7 @@ a. git init -> To initialize the Repository/folder as a git repo.
 a. git config user.name 'Arunesh Singh' -> Set the name of the user for commits in the repository.
 b. git config user.email 'johndoe@example.com' -> Set the email of the user for commits in the repository.
 c. git config --global user.name 'Arunesh Singh' -> Set the name of the user globally for commits in the repository.
+d.git config core.editor "code --wait" -> To set Visual Studio Code as the default text editor for Git commit messages and other editing tasks.(To set global editor add --global after config)
 
 5.
 a. git clone <repository_url> -> To create a local copy of a remote repository by cloning it from the specified URL.
