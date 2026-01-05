@@ -9,6 +9,8 @@ a. git status -> To check the current status of the repository, including change
 
 3. 
 a. git init -> To initialize the Repository/folder as a git repo.
+b. git remote add origin <repository_url> -> To link the local repository to a remote repository by adding a remote named 'origin' with the specified URL.
+c. git remote -v -> To verify the remote repository URL(s) linked to the local repository.
 
 4. 
 a. git config user.name 'Arunesh Singh' -> Set the name of the user for commits in the repository.
@@ -28,6 +30,8 @@ a. git branch -> To list all branches in the repository and indicate the current
 b. git branch <branch_name> -> To create a new branch with the specified name.
 c. git branch -d <branch_name> -> To delete the specified local branch (safe deletion - fails if unmerged changes exist).
 d. git branch -D <branch_name> -> To force delete the specified local branch (dangerous - deletes even if unmerged).
+e. git branch -m <new_branch_name> -> To rename the current branch to the specified new name.
+f. git branch -m <old_branch_name> <new_branch_name> -> To rename a branch from old_branch_name to new_branch_name. (-m uses safe rename, use -M for force rename)
 
 8. 
 a. git checkout <branch_name> -> To switch to the specified branch in the repository.
