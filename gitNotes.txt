@@ -141,3 +141,8 @@ NOTE : Avoid rebasing branches that have been pushed to the remote repository, a
 
 21. Rarely Used Command:
 a. git reflog -> To view the reference log, which records updates to the tip of branches and other references in the repository, allowing you to recover lost commits or branches.
+
+22. Git prune -> To remove stale references to remote branches that have been deleted from the remote repository.
+Example : git remote prune origin -> To remove stale references to remote branches that have been deleted from the remote repository named 'origin'.
+
+Note: This is useful for maintaining a clean local repository after remote branches have been deleted, preventing confusion from tracking branches that point to non-existent remote branches.
