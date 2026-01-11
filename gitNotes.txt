@@ -16,7 +16,7 @@ c. git remote -v -> To verify the remote repository URL(s) linked to the local r
 a. git config user.name 'Arunesh Singh' -> Set the name of the user for commits in the repository.
 b. git config user.email 'johndoe@example.com' -> Set the email of the user for commits in the repository.
 c. git config --global user.name 'Arunesh Singh' -> Set the name of the user globally for commits in the repository.
-d.git config core.editor "code --wait" -> To set Visual Studio Code as the default text editor for Git commit messages and other editing tasks.(To set global editor add --global after config)
+d. git config core.editor "code --wait" -> To set Visual Studio Code as the default text editor for Git commit messages and other editing tasks.(To set global editor add --global after config)
 
 5.
 a. git clone <repository_url> -> To create a local copy of a remote repository by cloning it from the specified URL.
@@ -35,8 +35,8 @@ f. git branch -m <old_branch_name> <new_branch_name> -> To rename a branch from 
 
 8. 
 a. git checkout <branch_name> -> To switch to the specified branch in the repository.
-b. git checkout -b <branch_name> -> To create a new branch with the specified name and switch to it immediately.
-c. git switch <branch_name> -> To switch to the specified branch in the repository (alternative to git checkout).
+b. git switch <branch_name> -> To switch to the specified branch in the repository (alternative to git checkout).
+c. git checkout -b <branch_name> -> To create a new branch with the specified name and switch to it immediately.
 d. git switch -c <branch_name> -> To create a new branch with the specified name and switch to it immediately (alternative to git checkout -b).
 e. git checkout <commit_hash> -> To switch to a specific commit in the repository, putting the repository in a detached HEAD state.
 f. git checkout Head~2 -> To switch to the commit that is two commits before the current HEAD, putting the repository in a detached HEAD state.(You can also use git switch --detach <commit_hash> as an alternative) To switch back to the latest commit on the current branch, use 'git checkout <branch_name>' or 'git switch <branch_name>'.
@@ -49,7 +49,7 @@ b. git fetch origin -> To retrieve the latest changes from the specified remote 
 c. git fetch origin <branch_name> -> To retrieve the latest changes from the specified branch of the remote repository (origin) without merging them into the local repository.
 
 10.
-a. git pull -> To fetch the latest changes from the remote repository and automatically merge them into the current branch in the local repository.
+a. git pull -> To fetch the latest changes from the remote repository and automatically merge them into the current branch in the local repository.(By default, it pulls from the remote tracking branch of the current branch)
 b. git pull origin <branch_name> -> To fetch the latest changes from the specified branch of the remote repository and automatically merge them into the current branch in the local repository.
 c. git pull -u origin <branch_name> -> To fetch the latest changes from the specified branch of the remote repository and automatically merge them into the current branch in the local repository, while also setting the upstream tracking reference for future pulls and pushes.
 
@@ -92,7 +92,7 @@ b. git add <filename1> <filename2> -> Add multiple specified files' current chan
 c. git add . -> Add all file's current changes to the staging area (index) so they will be included in the next commit.
 
 15. 
-a. git restore <filename> -> To discard changes in the working directory file.
+a. git restore <filename> -> To discard unstaged changes in the working directory for the specified file.
 b. git restore . -> To discard all changes in the working directory.
 c. git restore --staged <filename> -> To unstage a specific file from the staging area without discarding changes.
 
