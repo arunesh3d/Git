@@ -34,12 +34,11 @@ e. git branch -m <new_branch_name> -> To rename the current branch to the specif
 f. git branch -m <old_branch_name> <new_branch_name> -> To rename a branch from old_branch_name to new_branch_name. (-m uses safe rename, use -M for force rename)
 
 8. 
-a. git checkout <branch_name> -> To switch to the specified branch in the repository.
-b. git switch <branch_name> -> To switch to the specified branch in the repository (alternative to git checkout).
-c. git checkout -b <branch_name> -> To create a new branch with the specified name and switch to it immediately.
-d. git switch -c <branch_name> -> To create a new branch with the specified name and switch to it immediately (alternative to git checkout -b).
-e. git checkout <commit_hash> -> To switch to a specific commit in the repository, putting the repository in a detached HEAD state.
-f. git checkout Head~2 -> To switch to the commit that is two commits before the current HEAD, putting the repository in a detached HEAD state.(You can also use git switch --detach <commit_hash> as an alternative) To switch back to the latest commit on the current branch, use 'git checkout <branch_name>' or 'git switch <branch_name>'.
+a. git switch <branch_name> or git checkout <branch_name> -> To switch to the specified branch in the repository.
+b. git switch -c <branch_name> or git checkout -b <branch_name> -> To create a new branch with the specified name and switch to it immediately.
+c. git checkout <commit_hash> -> To switch to a specific commit in the repository, putting the repository in a detached HEAD state.
+d. git checkout Head~2 -> To switch to the commit that is two commits before the current HEAD, putting the repository in a detached HEAD state.(You can also use git switch --detach <commit_hash> as an alternative) To switch back to the latest commit on the current branch, use 'git checkout <branch_name>' or 'git switch <branch_name>'.
+e. git switch -c <branch_name> origin/<branch_name> -> To create a local branch with the specified name and automatically track the corresponding remote branch (alternative to git checkout).
 
 NOTE : Git checkout is now being replaced by git switch for branch switching operations.
 
